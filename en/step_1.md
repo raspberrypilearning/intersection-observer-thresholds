@@ -1,59 +1,33 @@
-## Introduction
+The Intersection observer is used to detect when an element (e.g. `<img>`, `<p>`, or `<div>`) enters or leaves the user's browser viewport.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+You can also options to the Intersection Observer, like setting a threshold.
 
-### What you will make
+Threshold values range from `0` to `1` 
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+`1` means that every single pixel of the element has to be in the viewport for the callback to run. 
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+`0` is the default value and means that just one pixel must be intersecting for the callback to run.
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+Here is an example of the use of the `threshold` option in an intersection observer in the [Animated story](https://projects.raspberrypi.org/en/projects/animated-story) project (part of the [More Web](https://projects.raspberrypi.org/en/raspberrypi/more-web) path).
 
---- collapse ---
+The option `threshold: 1` in this example means the callback only triggers when all of the snail image is in the viewport.
+
+--- code ---
 ---
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
+language: js
+filename: 
+line_numbers: true
+line_number_start: 1
+line_highlights: 6
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+const snailObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    entries[0].target.classList.add("startCrawl");
+  }
+},
+{ threshold: 1 }
+);
+snailObserver.observe(document.getElementById("snail"));
 
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+--- /code ---
