@@ -28,6 +28,6 @@ const snailObserver = new IntersectionObserver((entries) => {
 },
 { threshold: 1 }
 );
-snailObserver.observe(document.getElementById("snail"));
+snailObserver.observe(document.querySelector("#snail"));
 
 --- /code ---
