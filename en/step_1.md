@@ -1,6 +1,6 @@
 The Intersection observer is used to detect when an element (e.g. `<img>`, `<p>`, or `<div>`) enters or leaves the user's browser viewport.
 
-You can also options to the Intersection Observer, like setting a threshold.
+You can also add options to the observer, like setting a threshold.
 
 Threshold values range from `0` to `1` 
 
