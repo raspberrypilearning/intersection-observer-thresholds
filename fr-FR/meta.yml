@@ -1,9 +1,9 @@
-title: Seuils d'observation d'intersection
+title: Seuils de l'Intersection Observer
 hero_image: images/banner.png
-description: Seuils d'observation d'intersection
+description: Seuils de l'Intersection Observer
 version: 4
 listed: false
 copyedit: false
 last_tested: "2022-05-19"
 steps:
-  - title: Seuils d'observation d'intersection
+  - title: Seuils de l'Intersection Observer
