@@ -1,16 +1,16 @@
-L'observateur d'intersection est utilisé pour détecter quand un élément (par exemple `<img>`, `<p>` ou `<div>`) entre ou quitte la fenêtre du navigateur de l'utilisateur.
+L'Intersection Observer est utilisé pour détecter quand un élément (par exemple `<img>`, `<p>` ou `<div>`) entre ou quitte la fenêtre d'affichage du navigateur de l'utilisateur.
 
-You can also add options to the observer, like setting a threshold.
+Tu peux également ajouter des options à l'observateur, comme la définition d'un threshold (seuil).
 
-Threshold values range from `0` to `1`
+Les valeurs de seuil varient de `0` à `1`
 
-`1` means that every single pixel of the element has to be in the viewport for the callback to run.
+`1` signifie que chaque pixel de l'élément doit être dans la fenêtre d'affichage pour que le rappel s'exécute.
 
-`0` is the default value and means that just one pixel must be intersecting for the callback to run.
+`0` est la valeur par défaut et signifie qu'un seul pixel doit se croiser pour que le rappel s'exécute.
 
-Here is an example of the use of the `threshold` option in an intersection observer in the [Animated story](https://projects.raspberrypi.org/en/projects/animated-story) project (part of the [More Web](https://projects.raspberrypi.org/en/raspberrypi/more-web) path).
+Voici un exemple d'utilisation de l'option `threshold` dans un Intersection Observer dans le projet [Histoire animée](https://projects.raspberrypi.org/en/projects/animated-story) (faisant partie du parcours [Plus de web](https://projects.raspberrypi.org/en/raspberrypi/more-web)).
 
-The option `threshold: 1` in this example means the callback only triggers when all of the snail image is in the viewport.
+L'option `threshold: 1` dans cet exemple signifie que le rappel se déclenche uniquement lorsque toute l'image de l'escargot est dans la fenêtre d'affichage.
 
 ## --- code ---
 
