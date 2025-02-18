@@ -1,4 +1,4 @@
-The Intersection observer is used to detect when an element (e.g. `<img>`, `<p>`, or `<div>`) enters or leaves the user's browser viewport.
+L'observateur d'intersection est utilisé pour détecter quand un élément (par exemple `<img>`, `<p>` ou `<div>`) entre ou quitte la fenêtre du navigateur de l'utilisateur.
 
 You can also add options to the observer, like setting a threshold.
 
