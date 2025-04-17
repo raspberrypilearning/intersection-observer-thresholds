@@ -1,14 +1,14 @@
 De Intersection Observator wordt gebruikt om te detecteren wanneer een element (bijv. `<img>`, `<p>` of `<div>`) de browserviewport van de gebruiker binnenkomt of verlaat.
 
-Je kunt ook opties toevoegen aan de waarnemer, zoals het instellen van een drempel.
+Je kunt ook opties toevoegen aan de observer, zoals het instellen van een drempel.
 
 Drempelwaarden variëren van `0` tot `1`
 
 `1` betekent dat elke afzonderlijke pixel van het element in de viewport moet staan om de callback te kunnen uitvoeren.
 
-`0` is de standaardwaarde en betekent dat er slechts één pixel er in hoeft te staan om de callback te laten werken.
+`0` is de standaardwaarde en betekent dat slechts één pixel er in hoeft te staan om de callback te laten werken.
 
-Hier is een voorbeeld van het gebruik van de optie `threshold` in een intersection observer in het project [Geanimeerd verhaal](https://projects.raspberrypi.org/en/projects/animated-story) (onderdeel van het pad [Meer Web](https://projects.raspberrypi.org/en/raspberrypi/more-web).
+Hier is een voorbeeld van het gebruik van de optie `threshold` (drempel) in een intersection observer in het project [Geanimeerd verhaal](https://projects.raspberrypi.org/en/projects/animated-story) (onderdeel van het pad [Meer Web](https://projects.raspberrypi.org/en/raspberrypi/more-web).
 
 De optie `threshold: 1` in dit voorbeeld betekent de callback alleen wordt uitgevoerd wanneer de hele afbeelding van de slak in de viewport staat.
 
